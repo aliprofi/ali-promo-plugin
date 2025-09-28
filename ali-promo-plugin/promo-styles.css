@@ -1,0 +1,228 @@
+/* --- Ali Promo Plugin Global Styles --- */
+body {
+    --promo-main-color: #ed532e;
+    --promo-secondary-color: #FB8E25;
+    --promo-font: "Kurale", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* --- Single Post Styles --- */
+.alipromo-single-container {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    font-family: var(--promo-font);
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+.alipromo-article {
+    background: #fff;
+    padding: 20px 40px;
+}
+
+.alipromo-header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 20px;
+}
+
+.alipromo-title {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.promo-post-thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.alipromo-content .entry-content p {
+    line-height: 1.8;
+}
+
+.alipromo-dates {
+    background-color: #f9f9f9;
+    border-left: 4px solid var(--promo-secondary-color);
+    padding: 15px 20px;
+    margin-bottom: 25px;
+    font-size: 1em;
+}
+
+.alipromo-cta-block {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.alipromo-cta-button {
+    background: var(--promo-main-color);
+    color: #fff !important;
+    padding: 15px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.alipromo-cta-button:hover {
+    background: var(--promo-secondary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* --- Promo Code Interaction Styles --- */
+.alipromo-code-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fdf5f2;
+    border: 2px dashed var(--promo-main-color);
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.alipromo-code-text {
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #333;
+    flex-grow: 1;
+}
+
+.alipromo-code-text strong {
+    color: var(--promo-main-color);
+    cursor: default;
+    text-decoration: none;
+}
+
+.alipromo-code-button {
+    padding: 10px 20px;
+    border: none;
+    background: var(--promo-main-color);
+    color: #fff;
+    font-family: var(--promo-font);
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+    white-space: nowrap;
+}
+
+.alipromo-code-button:hover {
+    background: var(--promo-secondary-color);
+}
+
+
+/* --- Shortcode Styles [alipromo_countries] --- */
+.alipromo-countries-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+.alipromo-countries-nav a {
+    text-decoration: none;
+    padding: 8px 15px;
+    background: #f5f5f5;
+    color: #555;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+.alipromo-countries-nav a:hover {
+    background: var(--promo-secondary-color);
+    color: #fff;
+}
+
+.alipromo-country-section {
+    margin-bottom: 50px;
+}
+.alipromo-country-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #333;
+}
+.alipromo-posts-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+.alipromo-more-link-wrapper {
+    text-align: center;
+    margin-top: 30px;
+}
+.alipromo-more-link {
+    background: var(--promo-main-color);
+    color: #fff !important;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+.alipromo-more-link:hover {
+    background: var(--promo-secondary-color);
+}
+
+
+/* --- Shortcode Styles [alipromo_related] & Archive Styles --- */
+.alipromo-related-block {
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 2px solid #f0f0f0;
+}
+.alipromo-related-title {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 30px;
+    color: #333;
+}
+.alipromo-related-grid, .alipromo-archive-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+.alipromo-post-card {
+    display: block;
+    text-decoration: none;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.alipromo-post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+.alipromo-post-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.alipromo-post-card h3 {
+    margin: 0;
+    padding: 15px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* --- Archive Header --- */
+.alipromo-archive-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 30px;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+.alipromo-archive-title {
+    color: var(--promo-main-color);
+}
